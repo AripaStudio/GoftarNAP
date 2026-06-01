@@ -1,0 +1,110 @@
+[gd_scene load_steps=2 format=3 uid="uid://x51eit8d060x"]
+
+[ext_resource type="Script" path="res://CodePage/DocumentPage.cs" id="1_wll65"]
+
+[node name="DocumentPage" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_wll65")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0.0470588, 0.262745, 1)
+
+[node name="ItemList_Headlines" type="ItemList" parent="."]
+layout_mode = 2
+offset_left = 36.0
+offset_top = 69.0
+offset_right = 224.0
+offset_bottom = 773.0
+
+[node name="BackgroundTexts" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -613.0
+offset_top = -761.0
+grow_horizontal = 0
+grow_vertical = 0
+color = Color(0.0745098, 0, 0.101961, 1)
+
+[node name="ScrollContainer" type="ScrollContainer" parent="."]
+layout_mode = 2
+offset_left = 242.0
+offset_top = 117.0
+offset_right = 850.0
+offset_bottom = 795.0
+
+[node name="RLBL_Description" type="RichTextLabel" parent="ScrollContainer"]
+layout_mode = 2
+bbcode_enabled = true
+text = "Description :"
+
+[node name="HBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -608.0
+offset_top = -760.0
+grow_horizontal = 0
+grow_vertical = 0
+
+[node name="LBL_name" type="Label" parent="HBoxContainer"]
+layout_mode = 2
+text = "Name : "
+
+[node name="BTN_LINK" type="Button" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 10
+text = "              Open Link               "
+
+[node name="BTN_SearchOK" type="Button" parent="."]
+layout_mode = 2
+offset_left = 543.0
+offset_top = 8.0
+offset_right = 645.0
+offset_bottom = 56.0
+text = "OK
+"
+
+[node name="TXT_Search" type="TextEdit" parent="."]
+layout_mode = 2
+offset_left = 204.0
+offset_top = 8.0
+offset_right = 537.0
+offset_bottom = 58.0
+placeholder_text = "Search"
+wrap_mode = 1
+autowrap_mode = 2
+
+[node name="Btn_OpenOfList" type="Button" parent="."]
+layout_mode = 0
+offset_left = 160.0
+offset_top = 779.0
+offset_right = 225.0
+offset_bottom = 824.0
+text = "Open "
+
+[node name="Btn_backMainpage" type="Button" parent="."]
+layout_mode = 0
+offset_left = 5.0
+offset_top = 800.0
+offset_right = 134.0
+offset_bottom = 844.0
+text = "back Main page"

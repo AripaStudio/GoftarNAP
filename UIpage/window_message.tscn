@@ -1,0 +1,46 @@
+[gd_scene load_steps=2 format=3 uid="uid://bswt87gn1brtn"]
+
+[ext_resource type="Script" path="res://CodePage/WindowMessage.cs" id="1_8ad7k"]
+
+[node name="WindowMessage" type="Window"]
+title = "Message"
+size = Vector2i(300, 250)
+script = ExtResource("1_8ad7k")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.0392157, 0.0666667, 0.207843, 1)
+
+[node name="LBL_message" type="Label" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -107.0
+offset_top = -24.5
+offset_right = 107.0
+offset_bottom = 24.5
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 8
+size_flags_vertical = 0
+text = "saved json file is different 
+from the supported format."
+
+[node name="BTN_Ok" type="Button" parent="."]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -39.5
+offset_top = -31.0
+offset_right = 39.5
+grow_horizontal = 2
+grow_vertical = 0
+text = "OK"

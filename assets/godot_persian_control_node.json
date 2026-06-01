@@ -1,0 +1,254 @@
+[
+  {
+    "name": "Control",
+    "category": "Control",
+    "description": "کلاس پایه‌ای و انتزاعی برای تمام نودهای رابط کاربری گودو. این نود وظیفه پردازش مستقیم لنگرها، آفست‌ها، دریافت ورودی‌های ماوس از طریق فیلتر mouse_filter و مدیریت سیستم دریافت فوکوس ورودی را بر عهده دارد.\n\nC#:\nMouseFilter = MouseFilterEnum.Ignore;",
+    "link": "https://docs.godotengine.org/en/stable/classes/class_control.html"
+  },
+  {
+    "name": "BaseButton",
+    "category": "Control",
+    "description": "کلاس پایه انتزاعی برای تمامی دکمه‌های رابط کاربری در گودو که به خودی خود چیزی رندر نمی‌کند. این نود مسئولیت مدیریت وضعیت‌های دکمه (عادی، فشرده، هاور، غیرفعال) و صدور سیگنال‌های فیزیکی نظیر pressed و toggled را بر عهده دارد.\n\nC#:\nButtonPressed = true;",
+    "link": "https://docs.godotengine.org/en/stable/classes/class_basebutton.html"
+  },
+  {
+    "name": "Button",
+    "category": "Control",
+    "description": "دکمه متنی و گرافیکی استاندارد و مجهز به سیستم تم که برای دکمه‌های منو و فرم‌ها استفاده می‌شود. این نود قابلیت نمایش هم‌زمان متن و آیکون گرافیکی را دارا بوده و از کلیدهای میانبر (Shortcut) سیستم کاملاً پشتیبانی می‌کند.\n\nC#:\nPressed += () => GD.Print(\"دکمه کلیک شد!\");",
+    "link": "https://docs.godotengine.org/en/stable/classes/class_button.html"
+  },
+  {
+    "name": "TextureButton",
+    "category": "Control",
+    "description": "نسخه ویژه و بسیار پرکاربرد از کلاس دکمه‌ها که به جای رندر ساده، رفتارهای فیزیکی دکمه را بر اساس بافت‌های گرافیکی تخصیص‌یافته (هاور، فشرده، عادی) نمایش می‌دهد.\n\nC#:\nTextureNormal = GD.Load<Texture2D>(\"res://btn_normal.png\");",
+    "link": "https://docs.godotengine.org/en/stable/classes/class_texturebutton.html"
+  },
+  {
+    "name": "LinkButton",
+    "category": "Control",
+    "description": "دکمه‌ای شبیه به لینک‌های سنتی صفحات وب که معمولاً زیر آن خط کشیده شده و برای ارجاع به وب‌سایت‌ها یا باز کردن صفحات خارجی در بازی کاربرد دارد.\n\nC#:\nUri = \"https://godotengine.org\";",
+    "link": "https://docs.godotengine.org/en/stable/classes/class_linkbutton.html"
+  },
+  {
+    "name": "CheckBox",
+    "category": "Control",
+    "description": "دکمه‌ای دوحالته (باینری) که برای انتخاب گزینه‌ها در منوی تنظیمات کاربرد دارد. در صورتی که این نود به یک ButtonGroup متصل شود، به صورت خودکار رفتاری مشابه رادیو-باتن‌ها پیدا می‌کند.\n\nC#:\nToggled += (toggledOn) => GD.Print(\"وضعیت: \" + toggledOn);",
+    "link": "https://docs.godotengine.org/en/stable/classes/class_checkbox.html"
+  },
+  {
+    "name": "CheckButton",
+    "category": "Control",
+    "description": "یک سوئیچ گرافیکی دوحالته (روشن/خاموش) که از لحاظ منطق عملیاتی دقیقاً مشابه CheckBox است، اما از لحاظ بصری بیشتر برای فعال/غیرفعال کردن فوری برخی ویژگی‌ها طراحی شده است.\n\nC#:\nSetPressedNoSignal(true);",
+    "link": "https://docs.godotengine.org/en/stable/classes/class_checkbutton.html"
+  },
+  {
+    "name": "ColorRect",
+    "category": "Control",
+    "description": "نود رندرکننده یک مستطیل ساده و مسطح که فقط یک رنگ ثابت و خالص (بدون نیاز به بافت خارجی) را روی صفحه نمایش می‌دهد.\n\nC#:\nColor = new Color(0.2f, 0.6f, 0.9f);",
+    "link": "https://docs.godotengine.org/en/stable/classes/class_colorrect.html"
+  },
+  {
+    "name": "TextureRect",
+    "category": "Control",
+    "description": "نود تخصصی رندر تصاویر رابط کاربری و المان‌های ثابت گرافیکی نظیر آیکون‌ها، باگ‌گراند منوها و نوارهای جانبی که از مدهای کشیدگی و کاشی‌کاری چندگانه پشتیبانی می‌کند.\n\nC#:\nExpandMode = TextureRect.ExpandModeEnum.FitWidthProportional;",
+    "link": "https://docs.godotengine.org/en/stable/classes/class_texturerect.html"
+  },
+  {
+    "name": "NinePatchRect",
+    "category": "Control",
+    "description": "ابزاری فوق‌العاده کاربردی برای ساخت حاشیه‌ها و کادرهای دیالوگ. این نود با تقسیم تصویر به ۹ بخش مجزا، از دفرمه شدن و تار شدن گوشه‌های کادر در هنگام تغییر سایز کانتینر ممانعت می‌کند.\n\nC#:\nPatchMarginLeft = 15;",
+    "link": "https://docs.godotengine.org/en/stable/classes/class_ninepatchrect.html"
+  },
+  {
+    "name": "Panel",
+    "category": "Control",
+    "description": "کنترلری ساده که از یک کلاس سبک استایل‌باکس بومی برای نمایش کادرها و باک‌گراندهای رابط کاربری بدون وجود دکمه‌ها و عناصر تعاملی استفاده می‌کند.\n\nC#:\nSelfModulate = new Color(1f, 1f, 1f, 0.8f);",
+    "link": "https://docs.godotengine.org/en/stable/classes/class_panel.html"
+  },
+  {
+    "name": "Label",
+    "category": "Control",
+    "description": "نود اصلی نمایش متون ایستا و بدون استایل‌باکس داخلی در پروژه‌های گودو. این نود برای نمایش عبارات ساده، لودینگ، و هدهای بازی کاربرد داشته و از متدهایی مثل ترازبندی خودکار سود می‌برد.\n\nC#:\nText = \"امتیاز شما: 150\";",
+    "link": "https://docs.godotengine.org/en/stable/classes/class_label.html"
+  },
+  {
+    "name": "RichTextLabel",
+    "category": "Control",
+    "description": "پردازنده و نمایش‌دهنده قدرتمند متون مجهز به سیستم استایل‌دهی غنی (Bold, Italics, Color) با کدهای استاندارد BBCode. این نود ویژگی‌های منحصربه‌فردی نظیر افکت‌های متنی پویا (RichTextEffect) و لینک‌های فعال را به ارمغان می‌آورد.\n\nC#:\nAppendText(\"[color=red]خطای مهلک[/color]\");",
+    "link": "https://docs.godotengine.org/en/stable/classes/class_richtextlabel.html"
+  },
+  {
+    "name": "LineEdit",
+    "category": "Control",
+    "description": "فیلد متنی تک‌خطی برای دریافت اطلاعات ورودی نظیر نام بازیکنان یا آدرس‌های کوتاه وب. این نود از کلیدهای میانبر استاندارد سیستم‌عامل (کپی، کات و پیست) به طور بومی پشتیبانی می‌کند.\n\nC#:\nPlaceholderText = \"نام خود را وارد کنید...\";",
+    "link": "https://docs.godotengine.org/en/stable/classes/class_lineedit.html"
+  },
+  {
+    "name": "TextEdit",
+    "category": "Control",
+    "description": "ویرایشگر متنی چندخطی مجهز به پشتیبانی از راست‌چین/چپ‌چین کردن پویا، ردیابی کاراکترهای مخفی و سیستم کنترلی مکان‌نما برای توسعه برنامه‌ها یا لاگین‌های متنی طولانی.\n\nC#:\nText = \"خط اول\\nخط دوم\";",
+    "link": "https://docs.godotengine.org/en/stable/classes/class_textedit.html"
+  },
+  {
+    "name": "CodeEdit",
+    "category": "Control",
+    "description": "کلاسی تخصصی ارث‌بری شده از TextEdit که برای نوشتن کدهای متنی در محیط ادیتورها بهینه‌سازی شده و دارای امکاناتی چون شماره خطوط، تاشدگی متدها و هایلایت نحوی است.\n\nC#:\nCodeCompletionEnabled = true;",
+    "link": "https://docs.godotengine.org/en/stable/classes/class_codeedit.html"
+  },
+  {
+    "name": "Range",
+    "category": "Control",
+    "description": "کلاس پایه انتزاعی برای تمامی کنترل‌هایی که با مقادیر عددی در یک محدوده معین (دارای حداقل، حداکثر و گام تغییر) کار می‌کنند.\n\nC#:\nMinValue = 0.0; MaxValue = 100.0; Step = 1.0;",
+    "link": "https://docs.godotengine.org/en/stable/classes/class_range.html"
+  },
+  {
+    "name": "ProgressBar",
+    "category": "Control",
+    "description": "نود نمایش‌دهنده پیشرفت یک فرآیند بر مبنای عدد (مثل نوار لودینگ یا پر شدن نوار لول‌آپ) با افکت پرشدگی بومی افقی یا عمودی.\n\nC#:\nValue = 75.0;",
+    "link": "https://docs.godotengine.org/en/stable/classes/class_progressbar.html"
+  },
+  {
+    "name": "TextureProgressBar",
+    "category": "Control",
+    "description": "نوار پیشرفت پیشرفته که به توسعه‌دهنده امکان می‌دهد با تخصیص تصاویر دلخواه به باک‌گراند، خط دور و بخش پرکننده، نوارهای جذاب سلامتی (HP) با مد پرشدگی دایره‌ای یا خطی طراحی کند.\n\nC#:\nFillMode = (int)TextureProgressBar.FillModeEnum.Clockwise;",
+    "link": "https://docs.godotengine.org/en/stable/classes/class_textureprogressbar.html"
+  },
+  {
+    "name": "ScrollBar",
+    "category": "Control",
+    "description": "کلاس پایه برای نوارهای اسکرول افقی (HScrollBar) و عمودی (VScrollBar) که با حرکت فیزیکی هندل خود به کاربر امکان جابه‌جا شدن در صفحات و لیست‌های طولانی را می‌دهد.\n\nC#:\nCustomMinimumSize = new Vector2(12, 0);",
+    "link": "https://docs.godotengine.org/en/stable/classes/class_scrollbar.html"
+  },
+  {
+    "name": "Slider",
+    "category": "Control",
+    "description": "اسلایدرهای افقی (HSlider) و عمودی (VSlider) که برای تغییر دستی آسان مقادیر عددی مانند تنظیم سطح صدای بازی یا حساسیت ماوس در پنل تنظیمات استفاده می‌شوند.\n\nC#:\nValueChanged += (val) => GD.Print(\"مقدار تغییر کرد: \" + val);",
+    "link": "https://docs.godotengine.org/en/stable/classes/class_slider.html"
+  },
+  {
+    "name": "SpinBox",
+    "category": "Control",
+    "description": "نود ترکیبی عددی شامل یک فیلد متنی LineEdit داخلی و دو دکمه بالا و پایین برای افزایش و کاهش دقیق مقادیر عددی ریاضی.\n\nC#:\nGetLineEdit().ContextMenuEnabled = false;",
+    "link": "https://docs.godotengine.org/en/stable/classes/class_spinbox.html"
+  },
+  {
+    "name": "Container",
+    "category": "Control",
+    "description": "کلاس پایه‌ای بسیار قدرتمند و انتزاعی برای کانتینرها که موقعیت و اندازه نودهای فرزند خود را که از کلاس Control هستند، طبق قوانین ریاضی به طور خودکار بازآرایی می‌کند.\n\nC#:\nQueueSort();",
+    "link": "https://docs.godotengine.org/en/stable/classes/class_container.html"
+  },
+  {
+    "name": "BoxContainer",
+    "category": "Control",
+    "description": "کلاس مرجع که عناصر فرزند را پشت‌سرهم در یک جهت فیزیکی (افقی یا عمودی) تراز می‌کند و در قالب کلاس‌های ویژه‌تری نظیر HBoxContainer ارائه می‌شود.\n\nC#:\nAlignment = BoxContainer.AlignmentMode.Center;",
+    "link": "https://docs.godotengine.org/en/stable/classes/class_boxcontainer.html"
+  },
+  {
+    "name": "HBoxContainer",
+    "category": "Control",
+    "description": "نوعی از کانتینر جعبه‌ای که تمام عناصر فرزند درون خود را بدون تداخل و به صورت کاملاً خودکار در قالب یک صف افقی منظم در کنار هم ردیف می‌کند.\n\nC#:\nAddChild(new Button { Text = \"دکمه جدید\" });",
+    "link": "https://docs.godotengine.org/en/stable/classes/class_hboxcontainer.html"
+  },
+  {
+    "name": "VBoxContainer",
+    "category": "Control",
+    "description": "این کانتینر تمام عناصر و کنترل‌های فرزند را به صورت خودکار و زیر هم در قالب یک صف عمودی کاملاً هم‌تراز سازماندهی می‌نماید.\n\nC#:\nAddThemeConstantOverride(\"separation\", 15);",
+    "link": "https://docs.godotengine.org/en/stable/classes/class_vboxcontainer.html"
+  },
+  {
+    "name": "GridContainer",
+    "category": "Control",
+    "description": "کانتینری هوشمند جهت مرتب‌سازی چیدمان فرزندان در قالب جدول یا شبکه‌ای از سطرها و ستون‌ها با قابلیت تنظیم پویای تعداد ستون‌ها.\n\nC#:\nColumns = 4;",
+    "link": "https://docs.godotengine.org/en/stable/classes/class_gridcontainer.html"
+  },
+  {
+    "name": "MarginContainer",
+    "category": "Control",
+    "description": "کانتینر اضافه کردن فضاهای خالی امن به دور عناصر ورودی؛ این نود حاشیه‌های ثابت خارجی را برای تمام فرزندان از چهار جهت کنترل می‌نماید.\n\nC#:\nAddThemeConstantOverride(\"margin_top\", 100);",
+    "link": "https://docs.godotengine.org/en/stable/classes/class_margincontainer.html"
+  },
+  {
+    "name": "CenterContainer",
+    "category": "Control",
+    "description": "کانتینری که تمام عناصر فرزند را بدون وابستگی به اندازه آن‌ها، دقیقاً در مرکز نقطه تلاقی هندسی کادر بیرونی خود تراز و شناور نگاه می‌دارد.\n\nC#:\nUseMinimumSize = true;",
+    "link": "https://docs.godotengine.org/en/stable/classes/class_centercontainer.html"
+  },
+  {
+    "name": "PanelContainer",
+    "category": "Control",
+    "description": "کانتینر تخصصی که علاوه بر سازماندهی خودکار موقعیت فرزندان، یک باک‌گراند و حاشیه مبتنی بر تم و استایل‌باکس را دور تا دور فرزند خود ترسیم می‌کند.\n\nC#:\nAddThemeStyleboxOverride(\"panel\", new StyleBoxFlat());",
+    "link": "https://docs.godotengine.org/en/stable/classes/class_panelcontainer.html"
+  },
+  {
+    "name": "ScrollContainer",
+    "category": "Control",
+    "description": "کانتینری که برای نمایش لیست‌های ورودی بزرگتر از اندازه قاب نمایش مجهز به نوارهای اسکرول داخلی داینامیک می‌شود.\n\nC#:\nScrollHorizontal = 120;",
+    "link": "https://docs.godotengine.org/en/stable/classes/class_scrollcontainer.html"
+  },
+  {
+    "name": "SplitContainer",
+    "category": "Control",
+    "description": "کانتینری دارای اسلایدر میانی متحرک که به کاربر بازی اجازه می‌دهد به صورت داینامیک سهم فضای تخصیص‌یافته به دو کانتینر فرزند را در صفحه بازی تغییر دهد.\n\nC#:\nSplitOffset = 50;",
+    "link": "https://docs.godotengine.org/en/stable/classes/class_splitcontainer.html"
+  },
+  {
+    "name": "TabContainer",
+    "category": "Control",
+    "description": "کانتینری فوق‌العاده برای منوهای تبی؛ این نود به ازای هر فرزند، یک تب کلیک‌خور در بالای کادر ایجاد کرده و با کلیک روی آن فقط فرزند فعال را رندر می‌کند.\n\nC#:\nCurrentTab = 0;",
+    "link": "https://docs.godotengine.org/en/stable/classes/class_tabcontainer.html"
+  },
+  {
+    "name": "TabBar",
+    "category": "Control",
+    "description": "نود رندرکننده تب‌ها به صورت افقی بدون ایجاد ساختار مخفی‌کننده یا سوئیچینگ اتوماتیک فرزندان. برای سناریوهایی که می‌خواهید کنترل محتوای تب‌ها را به طور دستی بنویسید بسیار بهینه است.\n\nC#:\nTabChanged += (index) => GD.Print(\"تب جدید: \" + index);",
+    "link": "https://docs.godotengine.org/en/stable/classes/class_tabbar.html"
+  },
+  {
+    "name": "SubViewportContainer",
+    "category": "Control",
+    "description": "کانتینری مجهز به امکان نمایش کل خروجی رندر شده یک ساب‌ویوپورت در بخش‌های دوبعدی رابط کاربری (مانند نمایش تصاویر سه‌بعدی آواتار در UI).\n\nC#:\nStretch = true;",
+    "link": "https://docs.godotengine.org/en/stable/classes/class_subviewportcontainer.html"
+  },
+  {
+    "name": "GraphEdit",
+    "category": "Control",
+    "description": "یک گرید نامحدود دوبعدی که زیربنای سیستم‌های شیدرنویسی بصری یا پیاده‌سازی سیستم دیالوگ‌نویسی درختی و اتصال المان‌های GraphNode است.\n\nC#:\nConnectionRequest += (fromNode, fromPort, toNode, toPort) => ConnectNode(fromNode, fromPort, toNode, toPort);",
+    "link": "https://docs.godotengine.org/en/stable/classes/class_graphedit.html"
+  },
+  {
+    "name": "GraphNode",
+    "category": "Control",
+    "description": "نود پورت‌دار گرافیکی که در محیط کانتینری GraphEdit سازماندهی می‌شود و دارای متدهایی برای اتصال سیم‌های جریان داده بین ورودی و خروجی است.\n\nC#:\nSetSlot(0, true, 0, new Color(1, 1, 1), true, 0, new Color(1, 1, 1));",
+    "link": "https://docs.godotengine.org/en/stable/classes/class_graphnode.html"
+  },
+  {
+    "name": "ItemList",
+    "category": "Control",
+    "description": "لیست پویای عمودی با پشتیبانی از ستون‌های چندگانه برای نمایش المان‌هایی نظیر کوله‌پشتی بازیکن، انتخاب کاراکترها یا لاگ‌ها به همراه آیکون و متن.\n\nC#:\nAddItem(\"آیتم جدید\", GD.Load<Texture2D>(\"res://icon.png\"));",
+    "link": "https://docs.godotengine.org/en/stable/classes/class_itemlist.html"
+  },
+  {
+    "name": "Tree",
+    "category": "Control",
+    "description": "المان نمایش سلسله‌مراتب پیچیده درختی (مشابه درخت پروژه گودو) که برای پیاده‌سازی پورتال‌ها، گزینه‌های مجهز به زیرمجموعه و منوهای حرفه‌ای بکار می‌رود.\n\nC#:\nTreeItem root = CreateItem(); root.SetText(0, \"شاخه اصلی\");",
+    "link": "https://docs.godotengine.org/en/stable/classes/class_tree.html"
+  },
+  {
+    "name": "MenuBar",
+    "category": "Control",
+    "description": "نوار ابزار بومی بالای کادر برای ویندوزها و سیستم‌عامل‌ها که به ازای هر زیرمنوی مجهز به PopupMenu یک گزینه بازشو در نوار منوی بومی یا کلاینت ایجاد می‌کند.\n\nC#:\nPreferGlobalMenu = true;",
+    "link": "https://docs.godotengine.org/en/stable/classes/class_menubar.html"
+  },
+  {
+    "name": "MenuButton",
+    "category": "Control",
+    "description": "دکمه‌ای مجهز به منوی آبشاری متصل که با کلیک روی آن بلافاصله یک شیء PopupMenu با گزینه‌های دلخواه رندر می‌شود.\n\nC#:\nGetPopup().AddItem(\"ذخیره بازی\");",
+    "link": "https://docs.godotengine.org/en/stable/classes/class_menubutton.html"
+  },
+  {
+    "name": "PopupMenu",
+    "category": "Control",
+    "description": "منوی مدال شناور دارای لیست ورودی‌های فشرده و بهینه‌سازی شده برای پیاده‌سازی راست‌کلیک‌ها و میانبرهای دسترسی سریع منوی کاربری.\n\nC#:\nPopupCenteredClamped();",
+    "link": "https://docs.godotengine.org/en/stable/classes/class_popupmenu.html"
+  }
+]

@@ -1,0 +1,248 @@
+[
+  {
+    "name": "Node2D",
+    "category": "Node2D",
+    "description": "کلاس پایه‌ای برای تمام عناصر دوبعدی در موتور گودو که ویژگی‌های ترنسفورم شامل موقعیت مکانی (Position)، چرخش به رادیان (Rotation)، مقیاس (Scale) و کج‌شدگی (Skew) را هندل می‌کند. این نود به عنوان کانتینر فضایی برای گروه بندی فرزندان و مرتب‌سازی ردیف رندرینگ مورد استفاده قرار گرفته و متدهای کلیدی مانند LookAt برای چرخش آنی به سمت هدف و ToGlobal/ToLocal جهت تبدیل مختصات محلی و جهانی را فراهم می‌آورد.\n\nC#:\nPosition = new Vector2(100.5f, 250f);",
+    "link": "https://docs.godotengine.org/en/stable/classes/class_node2d.html"
+  },
+  {
+    "name": "Sprite2D",
+    "category": "Node2D",
+    "description": "نود تخصصی رندر تصاویر و بافت‌های دو بعدی ایستا بر روی صفحه بازی. این نود ویژگی‌هایی نظیر تعیین آفست، معکوس‌سازی تصاویر از طریق FlipH/FlipV و بخش‌بندی تصاویر اطلس (RegionEnabled) را در بر گرفته و به عنوان متد اصلی رندر دوبعدی در بازی‌ها شناخته می‌شود.\n\nC#:\nTexture = GD.Load<Texture2D>(\"res://assets/player.png\");",
+    "link": "https://docs.godotengine.org/en/stable/classes/class_sprite2d.html"
+  },
+  {
+    "name": "AnimatedSprite2D",
+    "category": "Node2D",
+    "description": "توسعه‌دهنده چندرسانه‌ای برای اجرای انیمیشن‌های فریم به فریم سنتی با استفاده از منبع داده SpriteFrames. این نود با متدهای کنترلی کلیدی خود نظیر Play ،Stop و Pause انیمیشن‌ها را هدایت کرده و سیگنال‌های حساسی مانند AnimationFinished را در زمان اتمام کار صادر می‌کند.\n\nC#:\nPlay(\"run_animation\");",
+    "link": "https://docs.godotengine.org/en/stable/classes/class_animatedsprite2d.html"
+  },
+  {
+    "name": "Line2D",
+    "category": "Node2D",
+    "description": "رندرکننده یک چندخطی پیوسته دوبعدی با استفاده از سیستم مش‌های داینامیک که امکان اعمال بافت، پهنای خطی و گرادینت‌های رنگی پیچیده را ایجاد می‌کند. از متدهای مهم آن می‌توان به AddPoint و RemovePoint اشاره کرد که برای ایجاد افکت‌های لیزر و مسیرهای حرکتی در زمان اجرا به شدت کاربردی هستند.\n\nC#:\nAddPoint(new Vector2(50, 100));",
+    "link": "https://docs.godotengine.org/en/stable/classes/class_line2d.html"
+  },
+  {
+    "name": "Polygon2D",
+    "category": "Node2D",
+    "description": "ابزاری جهت ترسیم پولیگون‌های چندضلعی سفارشی با استفاده از نقاط مشخص شده بر روی فضا. این نود ویژگی تغییر رنگ رئوس، اعمال بافت‌های اطلس با مختصات UV و اتصال به استخوان‌های فیزیکی برای تغییر شکل نرم در انیمیشن‌های پوستی (Skinning) را به طور کامل پشتیبانی می‌کند.\n\nC#:\nPolygon = new Vector2[] { new Vector2(0, 0), new Vector2(100, 0), new Vector2(50, 100) };",
+    "link": "https://docs.godotengine.org/en/stable/classes/class_polygon2d.html"
+  },
+  {
+    "name": "MeshInstance2D",
+    "category": "Node2D",
+    "description": "نود رندرکننده اشکال سه بعدی یا دوبعدی پولیگونی با استفاده از ساختار بهینه مش. بهره‌گیری از این نود به جای Sprite2D در تصاویر بزرگ و دارای فضاهای شفاف زیاد، با هدف کاهش نرخ Overdraw کارت گرافیک توصیه می‌گردد و ابزارهای تبدیل آن در تولبار ادیتور در دسترس هستند.\n\nC#:\nMesh = new QuadMesh();",
+    "link": "https://docs.godotengine.org/en/stable/classes/class_meshinstance2d.html"
+  },
+  {
+    "name": "MultiMeshInstance2D",
+    "category": "Node2D",
+    "description": "یکی از قوی‌ترین ابزارهای بهینه‌سازی گودو که به توسعه‌دهنده امکان می‌دهد هزاران کپی یا وهله هم‌شکل از یک مش را با استفاده از سخت‌افزار گرافیکی و در قالب یک فراخوانی رندر مجزا (Instancing) با سرعت خیره‌کننده رندر کند.\n\nC#:\nMultimesh.InstanceCount = 1000;",
+    "link": "https://docs.godotengine.org/en/stable/classes/class_multimeshinstance2d.html"
+  },
+  {
+    "name": "TileMap",
+    "category": "Node2D",
+    "description": "نود سنتی مدیریت مراحل تایل‌بندی شده که در گودو ۴.۳ به بعد رسماً منسوخ (Deprecated) شده است. این نود لایه‌های چندگانه، فیزیک، ناوبری و متدهای دستکاری داده‌های سلولی را در قالب یک نود واحد ارائه می‌داد که هم‌اکنون پیشنهاد می‌شود پروژه‌های جدید به جای آن از تایل‌مپ‌لیر استفاده کنند.\n\nC#:\nSetCell(0, new Vector2I(5, 5), 0, new Vector2I(1, 0));",
+    "link": "https://docs.godotengine.org/en/stable/classes/class_tilemap.html"
+  },
+  {
+    "name": "TileMapLayer",
+    "category": "Node2D",
+    "description": "جایگزین پیشرفته و ساختارمند برای تایل‌مپ در نسخه‌های نوین گودو ۴ که بر پایه اصل تفکیک لایه‌ها به نودهای مجزا طراحی شده است. هر وهله از این نود نماینده دقیقاً یک لایه تایل‌پینتینگ بوده و داده‌های نقشه را در ساختارهای دودویی فشرده با کارایی بالا بر روی کارت گرافیک مدیریت می‌کند. متد کلیدی SetCell برای مقداردهی تایل‌ها کاربرد دارد.\n\nC#:\nSetCell(new Vector2I(10, 12), sourceId: 0, atlasCoords: new Vector2I(2, 3));",
+    "link": "https://docs.godotengine.org/en/4.4/classes/class_tilemaplayer.html"
+  },
+  {
+    "name": "CollisionObject2D",
+    "category": "Node2D",
+    "description": "کلاس انتزاعی (Abstract) پایه برای تمامی اشیاء و جفت‌کننده‌های فیزیکی در گودو دو بعدی که توانایی ایجاد لایه‌ها و ماسک‌های برخورد را به طور مستقیم مدیریت می‌کند. این نود عهده‌دار معرفی مالک شکل فیزیکی (ShapeOwner) بوده و مبنای پیاده‌سازی متدهای ردیابی برخورد به شمار می‌آید.\n\nC#:\nSetCollisionLayerValue(1, true);",
+    "link": "https://docs.godotengine.org/en/stable/classes/class_collisionobject2d.html"
+  },
+  {
+    "name": "Area2D",
+    "category": "Node2D",
+    "description": "ناحیه دو بعدی ویژه برای تشخیص حضور، ورود یا خروج دیگر نودهای فیزیکی بدون ممانعت حرکتی در برابر آن‌ها (عملکرد تریگر). این نود برای ساخت پورتال‌ها، تله‌ها، سنسورهای هوش مصنوعی و جمع‌آوری آیتم‌ها به کار رفته و از طریق سیگنال بومی BodyEntered تعاملات را اعلام می‌دارد.\n\nC#:\nBodyEntered += (Node2D body) => GD.Print(\"جسم وارد شد: \" + body.Name);",
+    "link": "https://docs.godotengine.org/en/stable/classes/class_area2d.html"
+  },
+  {
+    "name": "PhysicsBody2D",
+    "category": "Node2D",
+    "description": "کلاس پایه انتزاعی برای تمام بدنه‌های متحرک و ساکنی که تحت تأثیر مستقیم شبیه‌ساز فیزیکی دو بعدی قرار دارند. این نود لایه‌های پیشرفته ارتباطی را تعریف کرده و مبنای ساخت انواع بدنه‌های متحرک یا موانع محیطی است.\n\nC#:\nAddCollisionExceptionWith(GetNode<PhysicsBody2D>(\"../Target\"));",
+    "link": "https://docs.godotengine.org/en/stable/classes/class_physicsbody2d.html"
+  },
+  {
+    "name": "CharacterBody2D",
+    "category": "Node2D",
+    "description": "بدنه فیزیکی تخصصی برای موجودات پویا و تحت کنترل برنامه‌نویس یا هوش مصنوعی. این نود با بهره‌گیری از بردار اختصاصی Velocity و فراخوانی متد معروف MoveAndSlide جابه‌جایی‌های نرم و واکنش با دیوارها و دامنه‌های سطوح شیب‌دار را با بهینه‌ترین حالت ممکن تضمین می‌کند.\n\nC#:\nVelocity = new Vector2(200f, 0f); MoveAndSlide();",
+    "link": "https://docs.godotengine.org/en/stable/classes/class_characterbody2d.html"
+  },
+  {
+    "name": "RigidBody2D",
+    "category": "Node2D",
+    "description": "بدنه فیزیکی با شبیه‌سازی کامل نیوتنی که به جرم، نیروهای وارده، گشتاور، جاذبه محیطی و ضربات واکنش دینامیک نشان می‌دهد. هرگونه اعمال تغییرات مستقیم مکانی بر روی آن خارج از سیستم شبیه‌ساز، باید ترجیحاً درون متد مجازی و همگام‌سازی شده _IntegrateForces مدیریت شود.\n\nC#:\nApplyCentralImpulse(new Vector2(0f, -150f));",
+    "link": "https://docs.godotengine.org/en/stable/classes/class_rigidbody2d.html"
+  },
+  {
+    "name": "StaticBody2D",
+    "category": "Node2D",
+    "description": "موانع فیزیکی غیرقابل حرکت که توسط نیروهای خارجی جابه‌جا نمی‌شوند و در حکم دیوارها، کف مراحل بازی و پلتفرم‌های ثابت کاربرد دارند. این نود با داشتن ویژگی PhysicsMaterialOverride رفتارهای اصطکاک و جهندگی سایر اشیاء روی خود را تعریف می‌نماید.\n\nC#:\nConstantLinearVelocity = new Vector2(100f, 0f);",
+    "link": "https://docs.godotengine.org/en/stable/classes/class_staticbody2d.html"
+  },
+  {
+    "name": "AnimatableBody2D",
+    "category": "Node2D",
+    "description": "زیرکلاسی تخصصی از StaticBody2D که برای موانع متحرک با اسکریپت یا انیمیشن (نظیر آسانسورها و پلتفرم‌های متحرک) بهینه‌سازی شده است. این نود تضمین می‌کند که تغییر ترنسفورم آن کاملاً با گام فیزیکی هماهنگ شده تا کاراکترهای سوار بر آن دچار لرزش گرافیکی نشوند.\n\nC#:\nSyncToPhysics = true;",
+    "link": "https://docs.godotengine.org/en/stable/classes/class_animatablebody2d.html"
+  },
+  {
+    "name": "CollisionShape2D",
+    "category": "Node2D",
+    "description": "یکی از حیاتی‌ترین نودها برای بدنه‌های برخورد فیزیکی که یک هندسه ساده ریاضی (دایره، مستطیل، کپسول) را به بدنه‌های والد الصاق می‌کند. این نود در حین بازی پنهان بوده و تنها از طریق متدها و خواص درونی خود ابعاد برخورد را برای موتور فیزیک توصیف می‌نماید.\n\nC#:\nGetNode<CollisionShape2D>(\"Shape\").Disabled = true;",
+    "link": "https://docs.godotengine.org/en/stable/classes/class_collisionshape2d.html"
+  },
+  {
+    "name": "CollisionPolygon2D",
+    "category": "Node2D",
+    "description": "نود تعریف محدوده برخورد فیزیکی پیچیده با ترسیم یک چندضلعی دقیق از رئوس دلخواه برای محیط‌ها یا کاراکترهای دارای هندسه ناهموار. پورت کردن این آرایه پولیگونی با استفاده از ساختار داده Vector2 انجام می‌شود.\n\nC#:\nPolygon = new Vector2[] { new Vector2(0, 0), new Vector2(50, 50), new Vector2(-50, 50) };",
+    "link": "https://docs.godotengine.org/en/stable/classes/class_collisionpolygon2d.html"
+  },
+  {
+    "name": "RayCast2D",
+    "category": "Node2D",
+    "description": "نود پرتاب‌کننده خط مستقیم فرضی به سمت مختصات TargetPosition با نرخ کوئری سریع جهت شناسایی وجود موانع فیزیکی مابین ابتدا و انتهای خط. متد GetCollider برخوردکننده کنونی را استخراج کرده و استفاده از ForceRaycastUpdate بررسی برخورد را بدون انتظار برای فریم فیزیکی بعدی بلافاصله اجرا می‌کند.\n\nC#:\nif (IsColliding()) { var hitNode = (Node2D)GetCollider(); }",
+    "link": "https://docs.godotengine.org/en/stable/classes/class_raycast2d.html"
+  },
+  {
+    "name": "Marker2D",
+    "category": "Node2D",
+    "description": "یک نقطه مختصاتی نامرئی در فضا که صرفاً به عنوان نشانه‌گذاری برای طراحان بازی در محیط ادیتور نمایش داده می‌شود. کاربرد اساسی آن برای ثبت نقاط خروج تیر، زادگاه دشمنان (Spawn Points) یا موقعیت دوربین بوده و ویژگی gizmo_extents ابعاد صلیب ویرایشگر را کنترل می‌کند.\n\nC#:\nVector2 bulletOrigin = GlobalPosition;",
+    "link": "https://docs.godotengine.org/en/stable/classes/class_marker2d.html"
+  },
+  {
+    "name": "Path2D",
+    "category": "Node2D",
+    "description": "نگهدارنده یک منحنی دوبعدی ریاضی با استفاده از ساختار ریاضی پله‌کانی Curve2D. این نود برای تعریف جاده‌ها، ریل‌های حرکت و بستر پرواز دشمنان در بازی طراحی شده است و نودهای فرزند خود را در مسیر حرکت راهنمایی می‌کند.\n\nC#:\nCurve.AddPoint(new Vector2(200f, 150f));",
+    "link": "https://docs.godotengine.org/en/stable/classes/class_path2d.html"
+  },
+  {
+    "name": "PathFollow2D",
+    "category": "Node2D",
+    "description": "نود نمونه‌بردار نقطه‌ای که باید مستقیماً فرزند نود Path2D باشد. برنامه‌نویس با تغییر دادن ویژگی Progress یا درصد پیشروی (ProgressRatio) می‌تواند شیء متصل به آن را با دقت ریاضی عالی روی طول کل منحنی بدون نیاز به فرمول‌های دستی هندسی جابه‌جا نماید.\n\nC#:\nProgressRatio += 0.05f;",
+    "link": "https://docs.godotengine.org/en/stable/classes/class_pathfollow2d.html"
+  },
+  {
+    "name": "RemoteTransform2D",
+    "category": "Node2D",
+    "description": "این نود رفتارهای ترنسفورم خود را به یک نود هدف در خارج از درخت ساختار خود پمپ (ارسال) می‌کند. این نود امکان کنترل کامل چرخش، مقیاس و موقعیت نود هدف را بدون وابستگی والد-فرزندی ایجاد کرده و مجهز به پروپرتی RemotePath است.\n\nC#:\nRemotePath = GetNode(\"TargetNode\").GetPath();",
+    "link": "https://docs.godotengine.org/en/stable/classes/class_remotetransform2d.html"
+  },
+  {
+    "name": "Camera2D",
+    "category": "Node2D",
+    "description": "دوربین ناظر بر محیط بازی که کنترل محدوده دید، اسکرول صحنه و تمرکز بر روی کاراکترها را بر عهده دارد. متد GetScreenCenterPosition مختصات دقیق مرکز کادر نمایش را با احتساب حرکات نرم‌سازی درازمدت دوربین خروجی می‌دهد.\n\nC#:\nZoom = new Vector2(1.5f, 1.5f);",
+    "link": "https://docs.godotengine.org/en/stable/classes/class_camera2d.html"
+  },
+  {
+    "name": "CanvasGroup",
+    "category": "Node2D",
+    "description": "یک لایه رندر تجمیعی دوبعدی که کودکان خود را ابتدا در یک بافر ثانویه رندر کرده و سپس به عنوان یک شیء واحد بر روی بوم اصلی تصویر می‌کشد. این نود راه‌حل نهایی برای جلوگیری از تداخل آلفای رنگی اشیاء نیمه‌شفاف هم‌پوشان است.\n\nC#:\nSelfModulate = new Color(1f, 1f, 1f, 0.4f);",
+    "link": "https://docs.godotengine.org/en/stable/classes/class_canvasgroup.html"
+  },
+  {
+    "name": "CanvasModulate",
+    "category": "Node2D",
+    "description": "نودی با قابلیت اعمال یک فیلتر رنگی سراسری به کل عناصر دو بعدی صحنه. این نود ابزار پایه‌ای عالی برای پیاده‌سازی سیستم‌های ساده چرخه آب‌وهوایی، تاریک کردن موقتی فضای بوم جهت جلوه‌های ویژه و تولید نور محیطی شب است.\n\nC#:\nColor = new Color(0.1f, 0.1f, 0.3f);",
+    "link": "https://docs.godotengine.org/en/stable/classes/class_canvasmodulate.html"
+  },
+  {
+    "name": "Light2D",
+    "category": "Node2D",
+    "description": "کلاس انتزاعی مرجع برای اعمال سیستم نورپردازی دوبعدی که ویژگی‌های کلی نظیر انرژی نوری (Energy)، فیلتر رنگ تداخل و روشن/خاموش بودن سایه‌ها را بر عهده دارد. این نود زیربنای کلاس‌های نوری مجزا است.\n\nC#:\nEnergy = 2.0f;",
+    "link": "https://docs.godotengine.org/en/stable/classes/class_light2d.html"
+  },
+  {
+    "name": "PointLight2D",
+    "category": "Node2D",
+    "description": "منبع نوری نقطه‌ای دوبعدی که بر اساس ساختار یک بافت گرافیکی نوری (Texture) پرتوهای رنگ‌آمیزی و نورپردازی موضعی را روی تایل‌ها و کاراکترها اعمال می‌کند.\n\nC#:\nTextureScale = 1.8f;",
+    "link": "https://docs.godotengine.org/en/stable/classes/class_pointlight2d.html"
+  },
+  {
+    "name": "DirectionalLight2D",
+    "category": "Node2D",
+    "description": "منبع نوری بی‌نهایت دور که تابش مستقیم و هم‌راستای پرتوها را بر کل گستره نقشه دوبعدی اعمال می‌نماید. این نود برای شبیه‌سازی نور یکنواخت خورشید یا پرتوهای ماه در بازی‌های اسکرولر استفاده می‌شود.\n\nC#:\nRotationDegrees = 135f;",
+    "link": "https://docs.godotengine.org/en/stable/classes/class_directionallight2d.html"
+  },
+  {
+    "name": "LightOccluder2D",
+    "category": "Node2D",
+    "description": "سدکننده دوبعدی نور که با بهره‌گیری از یک چندضلعی دقیق سایه‌زنی (OccluderPolygon2D) مسیر عبور پرتوهای نوری را مسدود ساخته و سایه‌های داینامیک را در مقابل نورهای متحرک ترسیم می‌نماید.\n\nC#:\nShowBehindParent = false;",
+    "link": "https://docs.godotengine.org/en/stable/classes/class_lightoccluder2d.html"
+  },
+  {
+    "name": "AudioListener2D",
+    "category": "Node2D",
+    "description": "ردیاب صوتی و میکروفون محیطی دوبعدی که کانون اصلی دریافت افکت‌ها و فاکتورهای صوتی موقعیتی را در فضای بازی معین می‌کند. چسباندن این نود به دوربین یا کاراکتر بازیکن برای ردیابی صحیح صداها الزامی است.\n\nC#:\nMakeCurrent();",
+    "link": "https://docs.godotengine.org/en/stable/classes/class_audiolistener2d.html"
+  },
+  {
+    "name": "AudioStreamPlayer2D",
+    "category": "Node2D",
+    "description": "نود پخش‌کننده منابع صوتی به همراه موقعیت‌یابی فضایی داینامیک. این نود بلندی صدا و تفکیک استریو به باندهای چپ و راست را بر اساس فاصله کنونی تا نود شنونده به صورت خودکار محاسبه و پخش می‌نماید.\n\nC#:\nPlay();",
+    "link": "https://docs.godotengine.org/en/stable/classes/class_audiostreamplayer2d.html"
+  },
+  {
+    "name": "CPUParticles2D",
+    "category": "Node2D",
+    "description": "شبیه‌ساز جلوه‌های ذرات معلق (مانند دود، جرقه، برگ‌ریزان) که تمام کارهای محاسباتی فیزیک حرکت را بر روی هسته‌های پردازنده اصلی (CPU) انجام می‌دهد و سازگاری بی‌نظیری در پلتفرم‌های موبایلی قدیمی ارائه می‌دهد.\n\nC#:\nEmitting = true;",
+    "link": "https://docs.godotengine.org/en/stable/classes/class_cpuparticles2d.html"
+  },
+  {
+    "name": "GPUParticles2D",
+    "category": "Node2D",
+    "description": "سیستم ذرات شتاب‌یافته گرافیکی که پردازش و شبیه‌سازی مسیرهای حرکتی هزاران ذره را بر روی تراشه کارت گرافیک (GPU) هدایت کرده و جلوه‌های فوق‌العاده چشم‌گیر با فیزیک برخورد غنی ارائه می‌دهد.\n\nC#:\nAmount = 5000;",
+    "link": "https://docs.godotengine.org/en/stable/classes/class_gpuparticles2d.html"
+  },
+  {
+    "name": "Skeleton2D",
+    "category": "Node2D",
+    "description": "نگهدارنده سیستم اسکلتی و ساختار آناتومی کاراکترها در انیمیشن‌های مبتنی بر استخوان‌بندی. این نود وظیفه همگام‌سازی و ارزیابی فاکتورهای حرکتی را میان گره‌های استخوان دوبعدی برقرار می‌سازد.\n\nC#:\nvar boneNode = GetBone(0);",
+    "link": "https://docs.godotengine.org/en/stable/classes/class_skeleton2d.html"
+  },
+  {
+    "name": "Bone2D",
+    "category": "Node2D",
+    "description": "یک المان استخوانی دوبعدی در زیرمجموعه اسکلت کاراکتر که با جابه‌جایی، چرخش و کشیدگی خود بخشی از مش‌های متصل به پولیگون‌ها را دستخوش فرم‌دهی بصری در حین متحرک‌سازی می‌کند.\n\nC#:\nRest = Transform2D.Identity;",
+    "link": "https://docs.godotengine.org/en/stable/classes/class_bone2d.html"
+  },
+  {
+    "name": "Joint2D",
+    "category": "Node2D",
+    "description": "کلاس انتزاعی متصل‌کننده فیزیکی مابین دو جسم صلب فیزیکی متمایز دوبعدی. از فرزندان معروف آن می‌توان پین‌جوینت فیزیکی را نام برد که رفتارهای شبیه‌ساز مفصل‌های زنجیری یا لولا را برقرار می‌نماید.\n\nC#:\nNodeA = GetNode(\"../BodyA\").GetPath();",
+    "link": "https://docs.godotengine.org/en/stable/classes/class_joint2d.html"
+  },
+  {
+    "name": "BackBufferCopy",
+    "category": "Node2D",
+    "description": "کپی‌کننده قسمتی از بافر رندر شده صفحه نمایش در یک بافر موقت ثانویه. این نود برای اعمال افکت‌های سایدر پیشرفته که نیاز به خواندن پیکسل‌های زیرین تصویر دارند (مثل شکست نوری آب، امواج انفجاری) استفاده می‌شود.\n\nC#:\nCopyMode = CopyModeEnum.Rect;",
+    "link": "https://docs.godotengine.org/en/stable/classes/class_backbuffercopy.html"
+  },
+  {
+    "name": "TouchScreenButton",
+    "category": "Node2D",
+    "description": "کلید فیزیکی بصورت دکمه دوبعدی که مشخصاً برای پاسخ به تعاملات لمسی بر روی دستگاه‌های تلفن همراه و نمایشگرهای هوشمند طراحی شده است. این نود لمس‌های ورودی را دریافت کرده و رفتاری مشابه عملکردهای صفحه‌کلید را شبیه‌سازی می‌سازد.\n\nC#:\nAction = \"ui_accept\";",
+    "link": "https://docs.godotengine.org/en/stable/classes/class_touchscreenbutton.html"
+  },
+  {
+    "name": "VisibleOnScreenNotifier2D",
+    "category": "Node2D",
+    "description": "یک مستطیل ردیاب فیزیکی که صرفاً فرآیند خروج یا ورود موقعیت مکانی خود از کادر نهایی مانیتور یا دوربین را ردیابی کرده و سیگنال‌های مربوط به وضعیت نمایش را ساطع می‌نماید.\n\nC#:\nScreenEntered += () => GD.Print(\"وارد محدوده دید دوربین شد\");",
+    "link": "https://docs.godotengine.org/en/stable/classes/class_visibleonscreennotifier2d.html"
+  },
+  {
+    "name": "VisibleOnScreenEnabler2D",
+    "category": "Node2D",
+    "description": "نسخه هوشمند نود ناظر که فراتر از اطلاع‌رسانی، به محض خروج یک جسم از قاب دوربین، پردازش‌های رفتاری، اسکریپتی یا انیمیشنی نودهای والد متصل را جهت حفظ منابع پردازنده متوقف می‌سازد.\n\nC#:\nEnableMode = EnableModeEnum.WhenInPhysicsFrame;",
+    "link": "https://docs.godotengine.org/en/stable/classes/class_visibleonscreenenabler2d.html"
+  }
+]

@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3 uid="uid://ry86emmojvxw"]
+
+[ext_resource type="Script" path="res://CodePage/FileDialogAp.cs" id="1_083mk"]
+
+[node name="FileDialogAP" type="FileDialog"]
+title = "Open a File"
+initial_position = 1
+size = Vector2i(550, 550)
+ok_button_text = "Open"
+file_mode = 0
+access = 2
+filters = PackedStringArray("*json")
+script = ExtResource("1_083mk")
