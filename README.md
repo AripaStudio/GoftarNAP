@@ -37,6 +37,10 @@ We will also continue improving the user interface while keeping the software si
 You can find sample educational documents in the `assets` folder.
 
 ---
+main menu(1.0.0) :
+<img width="851" height="882" alt="image" src="https://github.com/user-attachments/assets/2ccf70a4-15c9-4f6b-b61b-9f68d8fa2a52" />
+document menu : 
+<img width="852" height="883" alt="image" src="https://github.com/user-attachments/assets/09a71879-3133-49c3-88e3-8958a2cf962e" />
 
 **Developed by Aripa Studio**  
 *Atra Aripa Pars*
