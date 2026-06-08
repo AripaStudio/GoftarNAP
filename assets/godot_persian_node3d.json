@@ -1,0 +1,224 @@
+[
+  {
+    "name": "Node3D",
+    "category": "3D",
+    "description": "کلاس پایه‌ای برای تمامی اشیاء و عناصر سه‌بعدی در موتور گودو. این نود وظیفه نگهداری و محاسبه داده‌های ترنسفورم محلی و جهانی را بر عهده داشته و متدهای حساسی همچون LookAt برای چرخش آنی به سمت هدف و ToGlobal/ToLocal جهت تبدیل پویای مختصات را ارائه می‌دهد.\n\nC#:\nPosition = new Vector3(10.5f, 5.0f, -2.5f);",
+    "link": "https://docs.godotengine.org/en/stable/classes/class_node3d.html"
+  },
+  {
+    "name": "Sprite3D",
+    "category": "3D",
+    "description": "نود رندرکننده تصاویر دو بعدی در بستر یک جهان سه‌بعدی. این نود برای ساخت بازی‌های سبک 2.5D، افکت‌های بیلبورد و المان‌های دوبعدی محیطی کاربرد دارد و از انیمیشن‌های فریم به فریم و بافت‌های اطلس پشتیبانی می‌کند.\n\nC#:\nTexture = GD.Load<Texture2D>(\"res://assets/player_sprite.png\");",
+    "link": "https://docs.godotengine.org/en/stable/classes/class_sprite3d.html"
+  },
+  {
+    "name": "AnimatedSprite3D",
+    "category": "3D",
+    "description": "نودی تخصصی هم‌خانواده با Sprite3D که رندر انیمیشن‌های فریم به فریم سنتی دوبعدی را در فضای سه‌بعدی بر عهده دارد. این نود با متد Play انیمیشن‌های منبع داده SpriteFrames را اجرا کرده و سیگنال‌های اتمام پخش را برای همگام‌سازی بازی صادر می‌نماید.\n\nC#:\nPlay(\"run_animation\");",
+    "link": "https://docs.godotengine.org/en/stable/classes/class_animatedsprite3d.html"
+  },
+  {
+    "name": "MeshInstance3D",
+    "category": "3D",
+    "description": "نود استاندارد و اصلی برای وهله‌سازی و رندر مش‌ها و مدل‌های هندسی سه‌بعدی در صحنه بازی. این نود منابع مش را با متریال‌های تخصیص‌یافته روی صفحه ترسیم کرده و متدهایی نظیر CreateTrimeshCollision برای تولید خودکار شکل فیزیکی دقیق از روی مش بصری را داراست.\n\nC#:\nMesh = new BoxMesh();",
+    "link": "https://docs.godotengine.org/en/stable/classes/class_meshinstance3d.html"
+  },
+  {
+    "name": "MultiMeshInstance3D",
+    "category": "3D",
+    "description": "نود تخصصی بهینه‌سازی رندر که رندر سخت‌افزاری هزاران کپی هم‌شکل از یک مش را با ارسال یکباره دستور ترسیم به کارت گرافیک (Instancing) ممکن می‌سازد.\n\nC#:\nMultimesh.InstanceCount = 1000;",
+    "link": "https://docs.godotengine.org/en/stable/classes/class_multimeshinstance3d.html"
+  },
+  {
+    "name": "GridMap",
+    "category": "3D",
+    "description": "نود طراحی مراحل تایل‌بندی شده سه‌بعدی که به توسعه‌دهنده امکان می‌دهد با استفاده از یک کتابخانه مش (MeshLibrary) به صورت شبکه‌ای مراحل سه‌بعدی را سریعاً چیدمان و بهینه‌سازی کند.\n\nC#:\nSetCellItem(new Vector3I(1, 0, 1), item: 2, orientation: 0);",
+    "link": "https://docs.godotengine.org/en/stable/classes/class_gridmap.html"
+  },
+  {
+    "name": "CollisionObject3D",
+    "category": "3D",
+    "description": "کلاس انتزاعی مرجع و پایه برای تمامی اشیاء و موجوداتی که نیازمند تعامل فیزیکی و تشخیص برخورد در فضای سه‌بعدی هستند. این نود لایه‌ها و ماسک‌های برخورد را تنظیم کرده و سیگنال‌های حساسی مانند کلیک‌های ورودی روی مدل را هندل می‌کند.\n\nC#:\nCollisionLayer = 1; CollisionMask = 1;",
+    "link": "https://docs.godotengine.org/en/stable/classes/class_collisionobject3d.html"
+  },
+  {
+    "name": "Area3D",
+    "category": "3D",
+    "description": "یک ناحیه برخورد سه‌بعدی غیرصلب که صرفاً برای پیاده‌سازی تریگرها، تشخیص هم‌پوشانی و ورود/خروج اجسام فیزیکی دیگر بکار می‌رود.\n\nC#:\nBodyEntered += (Node3D body) => GD.Print(\"شخصیت وارد ناحیه شد: \" + body.Name);",
+    "link": "https://docs.godotengine.org/en/stable/classes/class_area3d.html"
+  },
+  {
+    "name": "PhysicsBody3D",
+    "category": "3D",
+    "description": "کلاس انتزاعی واسط برای تمام بدنه‌های متحرک یا ایستایی که قرار است مستقیماً در محاسبات موتور فیزیک سه‌بعدی گودو مشارکت داشته باشند.\n\nC#:\nAddCollisionExceptionWith(GetNode<Node3D>(\"../OtherBody\"));",
+    "link": "https://docs.godotengine.org/en/stable/classes/class_physicsbody3d.html"
+  },
+  {
+    "name": "CharacterBody3D",
+    "category": "3D",
+    "description": "نود تخصصی فیزیکی برای کاراکترهای تحت کنترل مستقیم اسکریپت یا هوش مصنوعی. این نود با متد MoveAndSlide و متغیر Velocity، جابه‌جایی روان در پله‌ها و برخورد با دیوارها را با بهینه‌ترین حالت پیاده‌سازی می‌کند.\n\nC#:\nVelocity = new Vector3(0, 0, -5f); MoveAndSlide();",
+    "link": "https://docs.godotengine.org/en/stable/classes/class_characterbody3d.html"
+  },
+  {
+    "name": "RigidBody3D",
+    "category": "3D",
+    "description": "نود بدنه صلب با فیزیک نیوتنی کامل که بر مبنای جرم، نیرو، گشتاور و نیروی جاذبه شبیه‌سازی می‌شود. ویرایش‌های داینامیک آن باید داخل متد مجازی _IntegrateForces هدایت گردد.\n\nC#:\nApplyCentralImpulse(new Vector3(0f, 15f, 0f));",
+    "link": "https://docs.godotengine.org/en/stable/classes/class_rigidbody3d.html"
+  },
+  {
+    "name": "StaticBody3D",
+    "category": "3D",
+    "description": "نود موانع فیزیکی کاملاً ثابت صحنه که توسط شبیه‌ساز فیزیک جابه‌جا نمی‌شوند. این نود ویژگی‌هایی نظیر اصطکاک را تعیین کرده و می‌تواند رفتارهایی نظیر نوار نقاله را شبیه‌سازی کند.\n\nC#:\nConstantLinearVelocity = new Vector3(3f, 0f, 0f);",
+    "link": "https://docs.godotengine.org/en/stable/classes/class_staticbody3d.html"
+  },
+  {
+    "name": "AnimatableBody3D",
+    "category": "3D",
+    "description": "بدنه فیزیکی ویژه‌ای ارث‌بری شده از StaticBody3D مجهز به قابلیت جابه‌جایی با اسکریپت یا انیمیشن‌پلیر (مانند آسانسورها). این نود سرعت حرکتی خود را به اجسام متحرک سوار بر خود القا می‌کند.\n\nC#:\nSyncToPhysics = true;",
+    "link": "https://docs.godotengine.org/en/stable/classes/class_animatablebody3d.html"
+  },
+  {
+    "name": "CollisionShape3D",
+    "category": "3D",
+    "description": "نود پیونددهنده یک شکل ساده هندسی ریاضی به بدنه‌های فیزیکی والد جهت توصیف مرزهای برخورد آن‌ها برای موتور فیزیک.\n\nC#:\nGetNode<CollisionShape3D>(\"Collision\").Disabled = false;",
+    "link": "https://docs.godotengine.org/en/stable/classes/class_collisionshape3d.html"
+  },
+  {
+    "name": "CollisionPolygon3D",
+    "category": "3D",
+    "description": "نود ایجاد برخورد فیزیکی سه‌بعدی منشورمانند که با تعمیم یک پولیگون دوبعدی در امتداد یک ارتفاع مشخص، اشکال برخورد سفارشی و منحصربه‌فردی را به بدنه‌ها اضافه می‌کند.\n\nC#:\nDepth = 2.5f;",
+    "link": "https://docs.godotengine.org/en/stable/classes/class_collisionpolygon3d.html"
+  },
+  {
+    "name": "RayCast3D",
+    "category": "3D",
+    "description": "نود پرتاب‌کننده خط مستقیم نامرئی در فضا جهت کوئری گرفتن آنی از وجود موانع فیزیکی. متد GetCollider برخوردکننده و متد GetCollisionPoint موقعیت برخورد را ارائه می‌دهند.\n\nC#:\nif (IsColliding()) { var hitNode = (Node3D)GetCollider(); }",
+    "link": "https://docs.godotengine.org/en/stable/classes/class_raycast3d.html"
+  },
+  {
+    "name": "ShapeCast3D",
+    "category": "3D",
+    "description": "نود پیشرفته پرتاب شکل که به جای یک خط باریک، یک محدوده حجمی سه‌بعدی هندسی سفارشی را در طول جهت تعریف‌شده جارو می‌کند تا تمامی اجسام متداخل را بلافاصله کشف کند.\n\nC#:\nForceShapecastUpdate();",
+    "link": "https://docs.godotengine.org/en/stable/classes/class_shapecast3d.html"
+  },
+  {
+    "name": "Marker3D",
+    "category": "3D",
+    "description": "یک صلیب نشانه‌گذاری مختصاتی نامرئی در زمان اجرای بازی که صرفاً برای ثبت موقعیت‌های موقت و راهنمایی در محیط ادیتور نمایش داده می‌شود.\n\nC#:\nVector2 position2D = GetViewport().GetCamera3D().UnprojectPosition(GlobalPosition);",
+    "link": "https://docs.godotengine.org/en/stable/classes/class_marker3d.html"
+  },
+  {
+    "name": "Path3D",
+    "category": "3D",
+    "description": "نود نگهدارنده منحنی‌های پیچیده سه‌بعدی ریاضی برای ترسیم مسیر حرکت دوربین‌ها، قطارها و ایجاد بستر حرکت داینامیک برای دشمنان.\n\nC#:\nCurve.AddPoint(new Vector3(5f, 10f, 0f));",
+    "link": "https://docs.godotengine.org/en/stable/classes/class_path3d.html"
+  },
+  {
+    "name": "PathFollow3D",
+    "category": "3D",
+    "description": "این نود باید فرزند Path3D باشد و با تغییر پارامتر پیشروی، نودهای فرزند خود را کاملاً روان روی منحنی والد حرکت می‌دهد.\n\nC#:\nProgressRatio += 0.05f;",
+    "link": "https://docs.godotengine.org/en/stable/classes/class_pathfollow3d.html"
+  },
+  {
+    "name": "RemoteTransform3D",
+    "category": "3D",
+    "description": "نود فرستنده جابه‌جایی که تغییرات موقعیت و چرخش خود را به صورت زنده به یک نود سه‌بعدی هدف دیگر پمپاژ می‌کند؛ بدون نیاز به رابطه والد-فرزندی مستقیم.\n\nC#:\nRemotePath = GetNode(\"../TargetMesh\").GetPath();",
+    "link": "https://docs.godotengine.org/en/stable/classes/class_remotetransform3d.html"
+  },
+  {
+    "name": "Camera3D",
+    "category": "3D",
+    "description": "نود ناظر بر محیط بازی که کادربندی نهایی و رندر دید سه‌بعدی را هندل می‌کند. این نود مدهای پرسپکتیو یا ارتوگرافیک را پوشش می‌دهد.\n\nC#:\nFov = 75f;",
+    "link": "https://docs.godotengine.org/en/stable/classes/class_camera3d.html"
+  },
+  {
+    "name": "SpringArm3D",
+    "category": "3D",
+    "description": "بازوی منعطف مجهز به سیستم تشخیص مانع که دوربین سوم شخص را در صورت برخورد با موانع به جلو می‌کشد تا از نفوذ به داخل دیوارها جلوگیری شود.\n\nC#:\nSpringLength = 4.0f;",
+    "link": "https://docs.godotengine.org/en/stable/classes/class_springarm3d.html"
+  },
+  {
+    "name": "WorldEnvironment",
+    "category": "3D",
+    "description": "قلب تپنده تنظیمات گرافیکی پیشرفته. این نود کنترل نور محیطی، پس‌پردازش‌ها نظیر Bloom، آسمان‌نما و مه حجمی را انجام می‌دهد.\n\nC#:\nEnvironment.VolumetricFogEnabled = true;",
+    "link": "https://docs.godotengine.org/en/stable/classes/class_worldenvironment.html"
+  },
+  {
+    "name": "OmniLight3D",
+    "category": "3D",
+    "description": "منبع نوری همه‌سویه که پرتوهای نوری خود را به صورت کروی از مرکز به تمامی جهات ساطع می‌کند (مشابه لامپ).\n\nC#:\nLightEnergy = 2.5f; OmniRange = 10f;",
+    "link": "https://docs.godotengine.org/en/stable/classes/class_omnilight3d.html"
+  },
+  {
+    "name": "DirectionalLight3D",
+    "category": "3D",
+    "description": "منبع نوری بی‌نهایت دور که تابش مستقیم و کاملاً موازی پرتوها را بر کل جهان اعمال می‌سازد (مشابه خورشید).\n\nC#:\nLightColor = Colors.White; LightEnergy = 1.0f;",
+    "link": "https://docs.godotengine.org/en/stable/classes/class_directionallight3d.html"
+  },
+  {
+    "name": "SpotLight3D",
+    "category": "3D",
+    "description": "منبع نوری مخروطی که تابش پرتوها را در زاویه‌ای مشخص جهت می‌دهد (شبیه‌ساز چراغ قوه).\n\nC#:\nSpotAngle = 45f;",
+    "link": "https://docs.godotengine.org/en/stable/classes/class_spotlight3d.html"
+  },
+  {
+    "name": "Decal",
+    "category": "3D",
+    "description": "تصویرکننده بافت روی مش‌های سه‌بعدی بدون تغییر هندسه. برای آثاری نظیر لکه‌ها، رد گلوله یا خون روی دیوارها به کار می‌رود.\n\nC#:\nAlbedoMix = 0.8f;",
+    "link": "https://docs.godotengine.org/en/stable/classes/class_decal.html"
+  },
+  {
+    "name": "FogVolume",
+    "category": "3D",
+    "description": "تعریف محدوده حجمی برای تولید مه غلیظ محلی. این نود با متریال‌های تخصصی، ته‌مایه‌های رنگی مه برای صحنه‌هایی مثل تالاب ایجاد می‌کند.\n\nC#:\nSize = new Vector3(5f, 5f, 5f);",
+    "link": "https://docs.godotengine.org/en/stable/classes/class_fogvolume.html"
+  },
+  {
+    "name": "AudioListener3D",
+    "category": "3D",
+    "description": "میکروفون نامرئی فضای سه‌بعدی که به دوربین بازی الصاق می‌شود تا موقعیت دریافت افکت‌های صوتی فضایی را مشخص کند.\n\nC#:\nMakeCurrent();",
+    "link": "https://docs.godotengine.org/en/stable/classes/class_audiolistener3d.html"
+  },
+  {
+    "name": "AudioStreamPlayer3D",
+    "category": "3D",
+    "description": "پخش‌کننده صوتی مجهز به محاسبات فاصله و جهت. این نود بلندی و پانینگ صدا را بر حسب فاصله تا شنونده تغییر می‌دهد.\n\nC#:\nPlay();",
+    "link": "https://docs.godotengine.org/en/stable/classes/class_audiostreamplayer3d.html"
+  },
+  {
+    "name": "CPUParticles3D",
+    "category": "3D",
+    "description": "شبیه‌ساز ذرات معلق که محاسبات را روی CPU انجام می‌دهد و سازگاری بالایی با دستگاه‌های مختلف دارد.\n\nC#:\nEmitting = true;",
+    "link": "https://docs.godotengine.org/en/stable/classes/class_cpuparticles3d.html"
+  },
+  {
+    "name": "GPUParticles3D",
+    "category": "3D",
+    "description": "سیستم ذرات شتاب‌یافته گرافیکی که امکان رندر هزاران ذره فیزیکی را با توان کارت گرافیک فراهم می‌آورد.\n\nC#:\nAmount = 10000;",
+    "link": "https://docs.godotengine.org/en/stable/classes/class_gpuparticles3d.html"
+  },
+  {
+    "name": "Skeleton3D",
+    "category": "3D",
+    "description": "نگهدارنده سلسله‌مراتب استخوان‌بندی و ریگینگ انیمیشنی. این نود موقعیت استخوان‌ها را به متریال مش الصاق می‌کند.\n\nC#:\nint boneIndex = FindBone(\"Head_Bone\");",
+    "link": "https://docs.godotengine.org/en/stable/classes/class_skeleton3d.html"
+  },
+  {
+    "name": "BoneAttachment3D",
+    "category": "3D",
+    "description": "اتصال‌دهنده آیتم‌ها به استخوان‌های Skeleton3D. برای الصاق سلاح، تجهیزات یا افکت به کاراکتر در حال حرکت کاربرد دارد.\n\nC#:\nBoneName = \"Hand_R\";",
+    "link": "https://docs.godotengine.org/en/stable/classes/class_boneattachment3d.html"
+  },
+  {
+    "name": "NavigationAgent3D",
+    "category": "3D",
+    "description": "هوش مصنوعی ناوبری که با سرور ناوبری در ارتباط است تا بهترین مسیر حرکتی را برای کاراکترها محاسبه کند.\n\nC#:\nTargetPosition = enemyTarget.GlobalPosition;",
+    "link": "https://docs.godotengine.org/en/stable/classes/class_navigationagent3d.html"
+  },
+  {
+    "name": "NavigationRegion3D",
+    "category": "3D",
+    "description": "کانتینر تجهیز صحنه‌ها به مش ناوبری. این نود سطوح قابل پیمایش را شناسایی می‌کند تا عامل‌های ناوبری مسیر را ردگیری کنند.\n\nC#:\nBakeNavigationMesh();",
+    "link": "https://docs.godotengine.org/en/stable/classes/class_navigationregion3d.html"
+  }
+]
